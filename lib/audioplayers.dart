@@ -13,6 +13,7 @@ typedef void SeekHandler(bool finished);
 typedef void ErrorHandler(String message);
 typedef void AudioPlayerStateChangeHandler(AudioPlayerState state);
 
+///idan
 /// This enum is meant to be used as a parameter of [setReleaseMode] method.
 ///
 /// It represents the behaviour of [AudioPlayer] when an audio is finished or
