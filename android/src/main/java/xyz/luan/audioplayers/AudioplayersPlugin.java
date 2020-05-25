@@ -252,7 +252,7 @@ public class AudioplayersPlugin implements MethodCallHandler, FlutterPlugin {
             if (nonePlaying) {
                 audioplayersPlugin.stopPositionUpdates();
             } else {
-                handler.postDelayed(this, 200);
+                handler.postDelayed(this, 20);
             }
         }
     }
