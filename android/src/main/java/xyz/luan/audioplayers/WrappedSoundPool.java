@@ -156,15 +156,15 @@ public class WrappedSoundPool extends Player {
         synchronized (urlToPlayers) {
             this.url = url;
             List<WrappedSoundPool> urlPlayers = urlToPlayers.get(url);
-            if (urlPlayers != null) {
-                // Sound has already been loaded - reuse the soundId.
-                WrappedSoundPool originalPlayer = urlPlayers.get(0);
-                this.soundId = originalPlayer.soundId;
-                this.loading = originalPlayer.loading;
-                urlPlayers.add(this);
-                Log.d("WSP", "Reusing soundId" + this.soundId + " for " + url + " is loading=" + this.loading + " " + this);
-                return;
-            }
+//             if (urlPlayers != null) {
+//                 // Sound has already been loaded - reuse the soundId.
+//                 WrappedSoundPool originalPlayer = urlPlayers.get(0);
+//                 this.soundId = originalPlayer.soundId;
+//                 this.loading = originalPlayer.loading;
+//                 urlPlayers.add(this);
+//                 Log.d("WSP", "Reusing soundId" + this.soundId + " for " + url + " is loading=" + this.loading + " " + this);
+//                 return;
+//             }
 
             // First one for this URL - load it.
             this.loading = true;
